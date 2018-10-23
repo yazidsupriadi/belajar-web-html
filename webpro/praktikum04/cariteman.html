@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web3</title>
+	<script type="text/javascript" language="javascript">
+		
+	function cariTeman(){
+
+		let frm=document.getElementById("frm_cari");
+		let str = frm.nama_cari.value;
+		alert("kata cari :"+frm.nama_cari.value);
+		document.getElementById("kata_cari").innerHTML=str;
+		console.log(str);
+		if (str=="yazid") {
+			console.log("yazid ketemu!!");
+			document.getElementById("katacari").style="color:blue";
+		}
+		else{
+			console.log("ini bukan yazid");
+			document.getElementById("katacari").style="color:red";
+		}
+	}
+
+
+
+	</script>
+</head>
+<body>
+	<form id="frm_cari">
+		Cari siswa :
+		<input type="text" name="nama_cari" value="" size="50"/>
+		<input type="button" value="Go" name="proses_cari" onClick="cariTeman()">
+
+	</form>
+	<hr>
+	<div style="width: 300px;border: 25px solid green;padding: 25px;">
+	Nama yang anda cari = <span id="katacari"></span>		
+
+	</div>
+</body>
+</html>

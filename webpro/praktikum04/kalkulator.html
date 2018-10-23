@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function jumlahkan(){
+
+		let strbil1 =document.getElementById('bil1').value;
+
+		let strbil2 =document.getElementById('bil2').value;
+		console.log(strbil1+strbil2);
+		let bil1 = parseInt(strbil1);
+		let bil2 = parseInt(strbil2);
+		console.log(bil1+bil2);
+		let bilhasil = bil1+bil2;
+		document.getElementById("hasil").innerHTML =bilhasil;
+
+
+
+
+	}
+
+</script>
+	<title>prak web</title>
+</head>
+<body>
+
+	<h2>Kalkulator Penjumlahan</h2>
+	<form>
+		Bilangan1 : <input type="text" id="bil1"><br>
+		Bilangan2 : <input type="text" id="bil2"><br>
+		
+  <input type="radio" name="gender" value="tambah" checked> +<br>
+  <input type="radio" name="gender" value="kurang"> -<br>
+  <input type="radio" name="gender" value="kali"> *<br>
+
+  <input type="radio" name="gender" value="bagi"> - <br>		
+		<input type="button" name="" value="hitung" onclick="jumlahkan();">
+		<br>
+		Hasil penjumlahan : <span id="hasil"></span>
+	</form>
+</body>
+</html>

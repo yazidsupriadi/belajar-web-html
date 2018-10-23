@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ubah warna</title>
+	<script type="text/javascript" language="JavaScript">
+		function ubahWarna(){
+			let acak =Math.round(Math.random()*10);
+			let warnas = ["beige","ceiyan","blue","pink","green","yellow","red","azure","gold","gray"];
+			console.log("bilangan acak "+ acak);
+			console.log("dapat warna " + warnas[acak]);
+			document.getElementById("id1").style="background-color:"+warnas[acak];
+		}
+	</script>
+</head>
+<body id="id1">
+<form>
+	<input type="button" value="ubah warna"name="ubahwarna" onclick="ubahWarna()">
+
+</form>
+</body>
+</html>
